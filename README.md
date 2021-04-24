@@ -1,4 +1,4 @@
-<h1>NLW-5_Trilha ReactJs</h1>
+<h1>NLW-5_Trilha ReactJs :rocket:</h1> 
 <h2>Rumo ao pr&oacute;ximo nivel&nbsp;</h2>
 <p>Ao longo de uma semana foi desenvolvida uma aplica&ccedil;&atilde;o de podcast junto com o pessoal da @Rockeatseat, utilizando como principal tecnologia o ReactJs, que &eacute; uma biblioteca da linguagem de programa&ccedil;&atilde;o JavaScript voltada para o desenvolvimento web, que tal tecnologia &eacute; mantida pelo Facebook. Foi de grande prazer e de grande aprendizagem ter desenvolvida a mesma da qual pode ser implementada utilizando uma &oacute;tima arquitetura em conjunto com a aprendizagem de diversos aspectos associados a tecnologia desse projeto tais como:/p&gt;</p>
 <ul>
