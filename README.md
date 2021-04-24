@@ -1,5 +1,5 @@
 <h1>NLW-5_Trilha ReactJs :rocket:</h1> 
-<h2>Rumo ao pr&oacute;ximo nivel&nbsp;</h2>
+<h2>Rumo ao pr&oacute;ximo nível&nbsp;</h2>
 <p>Ao longo de uma semana foi desenvolvida uma aplica&ccedil;&atilde;o de podcast junto com o pessoal da @Rockeatseat, utilizando como principal tecnologia o ReactJs, que &eacute; uma biblioteca da linguagem de programa&ccedil;&atilde;o JavaScript voltada para o desenvolvimento web, que tal tecnologia &eacute; mantida pelo Facebook. Foi de grande prazer e de grande aprendizagem ter desenvolvida a mesma da qual pode ser implementada utilizando uma &oacute;tima arquitetura em conjunto com a aprendizagem de diversos aspectos associados a tecnologia desse projeto tais como:/p&gt;</p>
 <ul>
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Fundamentos de React</span></li>
@@ -22,7 +22,7 @@
 <li style="font-weight: 400;" aria-level="1"><strong><span style="color: #0000ff;">TypeScript</span></strong></li>
 </ul>
 <p><strong>Instala&ccedil;&atilde;o e compila&ccedil;&atilde;o</strong></p>
-<p><span style="font-weight: 400;">Para ter acesso ao projeto voc&ecirc; pode baixar um arquivo zip ou clonar o mesmo atraves do git. Para compila&ccedil;&atilde;o se faz necess&aacute;rio digitar os seguintes comando no terminar da pasta do projeto:&nbsp;</span></p>
+<p><span style="font-weight: 400;">Para ter acesso ao projeto voc&ecirc; pode baixar um arquivo zip ou clonar o mesmo através do git. Para compila&ccedil;&atilde;o se faz necess&aacute;rio digitar os seguintes comando no terminal da pasta do projeto:&nbsp;</span></p>
 <ul>
 <li style="font-weight: 400;" aria-level="1"><span style="color: #000000;"><strong>yarn</strong></span></li>
 <li style="font-weight: 400;" aria-level="1"><span style="color: #000000;"><strong>yarn dev</strong></span></li>
