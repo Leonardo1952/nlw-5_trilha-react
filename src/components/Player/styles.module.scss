@@ -109,11 +109,17 @@
 
         &:disabled {
             cursor: default;
+            opacity: 0.5;
         }
 
         &:hover:not(:disabled) {
             filter: brightness(0.95)
         }
+
+
+        &.isActive {
+            filter: invert(0.35) sepia(1) saturate(3) hue-rotate(100deg)
+          }
 
         &.playButton {
             width: 4rem;
