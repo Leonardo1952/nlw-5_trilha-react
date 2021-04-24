@@ -1,10 +1,13 @@
+import { useContext } from 'react';
 import { GetStaticProps } from 'next';
 import Image from 'next/image';
 import Link from 'next/link'
 import { format, parseISO} from 'date-fns';
-import ptBR from 'date-fns/locale/pt-BR'
+import ptBR from 'date-fns/locale/pt-BR';
+
 import { api } from '../services/api';
 import { convertDurationToTimeString } from '../utils/conertDurationToTimeString';
+import { PlayerContext } from '../contexts/PlayerContext';
 
 import styles from './home.module.scss';
 
@@ -25,6 +28,8 @@ type HomeProps = {
 }
 
 export default function Home({latestEpisodes, allEpisodes}: HomeProps) {
+  const { play } = useContext(PlayerContext)
+
   return (
     <div className={styles.homepage}>
       <section className={styles.latestEpisodes}>
@@ -51,7 +56,7 @@ export default function Home({latestEpisodes, allEpisodes}: HomeProps) {
                   <span>{episode.durationAsString}</span>
                 </div>
 
-                <button type="button">
+                <button type="button" onClick={() =>play(episode)}>
                   <img src="/play-green.svg" alt="Tocar episodio"/>
                 </button>
               </li>
@@ -74,7 +79,6 @@ export default function Home({latestEpisodes, allEpisodes}: HomeProps) {
               <th></th>
             </tr>
           </thead>
-
           <tbody>
             {allEpisodes.map(episode => {
               return (
@@ -88,7 +92,6 @@ export default function Home({latestEpisodes, allEpisodes}: HomeProps) {
                       objectFit="cover"
                     />
                   </td>
-
                   <td>
                     <Link href={`/episodes/${episode.id}`}>
                       <a>{episode.title}</a>
@@ -98,7 +101,6 @@ export default function Home({latestEpisodes, allEpisodes}: HomeProps) {
                   <td style={{width: 100}}>{episode.publishedAt}</td>
                   <td>{episode.durationAsString}</td>
                   <td>
-
                     <button type="button">
                       <img src="/play-green.svg" alt="Tocar episodio"/>
                     </button>
@@ -108,13 +110,10 @@ export default function Home({latestEpisodes, allEpisodes}: HomeProps) {
             })}
           </tbody>
         </table>
-
       </section>
     </div>
   )
 }
-
-
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await api.get('episodes', {
     params: {
@@ -122,7 +121,7 @@ export const getStaticProps: GetStaticProps = async () => {
       _sort: 'published_at',
       _order: 'desc'
     }
-  })
+  });
 
   const episodes = data.map(episode => {
     return {

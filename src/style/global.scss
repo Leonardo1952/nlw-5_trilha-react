@@ -21,7 +21,6 @@
     --purple-800: #6F48C9;
   }
 
-
 @media (max-width: 1080px) {
     html {
         font-size: 93.75%;
@@ -33,10 +32,9 @@
         font-size: 87.5%;
     }
 }
-body {
-    background: var(--gray-50);
 
-    
+body {
+    background: var(--gray-50);    
 }
 
 body, input, textarea, button {
