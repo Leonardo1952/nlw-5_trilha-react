@@ -12,7 +12,7 @@
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Context</span></li>
 </ul>
 <p><span style="font-weight: 400;">Al&eacute;m de muitas outras como Static side generation, JsonServer e muito mais. O uso destas caracter&iacute;sticas e tecnologias foi de grande import&acirc;ncia, deixando o projeto assim com maior qualidade.</span></p>
-<p><strong>Ferramentas</strong></p>
+<p><strong>Ferramentas :desktop_computer: </strong></p>
 <p><span style="font-weight: 400;">Para realiza&ccedil;&atilde;o desse projeto foi instalado o next.js no computador, o yarn al&eacute;m do editor de c&oacute;digo fonte VisualStudioCode.</span><strong>&nbsp;</strong></p>
 <p><strong>Tecnologias</strong></p>
 <p><span style="font-weight: 400;">Este projeto foi desenvolvido utilizando as seguintes tecnologias:</span></p>
